@@ -8,12 +8,9 @@ import {ImageCroppedEvent} from "ngx-image-cropper";
   styleUrls: ['./image-cropper.component.css']
 })
 export class ImageCropperComponent implements OnInit {
-
   constructor() { }
-
   ngOnInit(): void {
   }
-
   imgChangeEvt: any = '';
   cropImgPreview: any = '';
   onFileChange(event: any): void {
@@ -25,14 +22,10 @@ export class ImageCropperComponent implements OnInit {
   imgLoad() {
     // display cropper tool
   }
-
   initCropper() {
     // init cropper
   }
-
-
   imgFailed() {
     // error msg
   }
-
 }

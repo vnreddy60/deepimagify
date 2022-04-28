@@ -6,18 +6,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ImageAppFooterComponent } from './image-app-footer/image-app-footer.component';
 import { ImageAppWavesEffectComponent } from './image-app-waves-effect/image-app-waves-effect.component';
 import { ImageCropperComponent } from './image-cropper/image-cropper.component';
-import {ImageCropperModule} from "ngx-image-cropper";
+import { ImageCropperModule } from "ngx-image-cropper";
 import { AppRoutingModule } from './app-routing.module';
-import {RouterModule} from "@angular/router";
-import { ImageHomeComponentComponent } from './image-home-component/image-home-component.component';
+import { RouterModule } from "@angular/router";
 
 @NgModule({
   declarations: [
     AppComponent,
     ImageAppFooterComponent,
     ImageAppWavesEffectComponent,
-    ImageCropperComponent,
-    ImageHomeComponentComponent
+    ImageCropperComponent
   ],
   imports: [
     BrowserModule,
@@ -30,3 +28,4 @@ import { ImageHomeComponentComponent } from './image-home-component/image-home-c
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
