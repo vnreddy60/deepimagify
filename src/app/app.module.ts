@@ -8,19 +8,23 @@ import { ImageAppWavesEffectComponent } from './image-app-waves-effect/image-app
 import { ImageCropperComponent } from './image-cropper/image-cropper.component';
 import {ImageCropperModule} from "ngx-image-cropper";
 import { AppRoutingModule } from './app-routing.module';
+import {RouterModule} from "@angular/router";
+import { ImageHomeComponentComponent } from './image-home-component/image-home-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ImageAppFooterComponent,
     ImageAppWavesEffectComponent,
-    ImageCropperComponent
+    ImageCropperComponent,
+    ImageHomeComponentComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     ImageCropperModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
